@@ -35,16 +35,18 @@
 <style>
   .font-manrope{
   font-family: "Manrope", sans-serif;
+  background: #bced6d1a;
 }
 .hide{
   display: none;
 }
 
+
 </style>
 </head>
 <body class="font-manrope">
   <!-- header section -->
-  <header class="container mx-auto">
+  <header class="container mx-auto hide">
     <!-- navbar part -->
     <nav>
       <div class="navbar">
@@ -120,7 +122,7 @@
   <main class="container mx-auto">
 
     <!-- Hockeys Club Section -->
-    <section >
+    <section class="hide">
       <div class="flex flex-col justify-center">
         <div class="mt-24 mb-12 border-y-2 border-dashed">
           <h2 class="text-4xl font-extrabold text-black mt-6 mb-6 text-center">Professional Hockeys Club</h2>
@@ -154,15 +156,15 @@
     </section>
 
     <!-- Program Sections -->
-    <section>
+    <section class="hide">
       <div class="flex flex-col justify-center">
         <div class="mt-24 mb-12 border-y-2 border-dashed">
           <h2 class="text-4xl font-extrabold text-black mt-6 mb-6 text-center">Program Sections</h2>
           <p class="text-base text-p_text_color mb-6 text-center"> Immerse yourself in the relentless pursuit of peak performance through our fitness regimen, sculpting champions ready for the fast-paced <br> demands of professional hockey.Join strategic sessions to refine tactical insights, fostering a winning edge led by experts in the game.</p>
         </div>
         <div class="grid grid-cols-1 lg:grid-cols-2 grid-rows-1 lg:grid-rows-2 lg:gap-x-5 lg:gap-y-9">
-          <div class="card w-full h-60 lg:h-96 image-full">
-            <figure><img class="w-full" src="images/2.png" alt="" /></figure>
+          <div class="card w-full h-60 lg:h-96 image-full bg-[linear-gradient (rgba(0,0,0,0.1),rgba(0,0,0,0.5)),url(images/2.png)]">
+            <!-- <figure><img class="w-full" src="images/2.png" alt="" /></figure> -->
             <div class="card-body lg:mt-24 mb-10 mx-10">
               <h2 class="card-title text-3xl font-extrabold ">Junior Program</h2>
               <p class="my-4 font-semibold flex-grow-0">Nurturing the passion for hockey in our youngest enthusiasts, the Junior Program provides a foundation of skills, teamwork, and sportsmanship, cultivating the next generation of hockey stars.</p>
@@ -190,6 +192,359 @@
                 <button class="btn text-xl text-white font-extrabold border-0 rounded-lg bg-orange-700 hover:bg-amber-500 hover:text-black ">Register Now!</button>
               </div>
             </div>
+          </div>
+        </div>
+       
+      </div>
+    </section>
+
+    <!-- New Products Section -->
+    <section>
+      <div class="flex flex-col">
+        <div class="mt-40 mb-12 border-y-2 border-dashed">
+          <h2 class="text-3xl lg:text-4xl font-extrabold text-black mt-6 mb-6 text-center">Our New Products</h2>
+          <p class="text-base text-p_text_color mb-6 text-center p-4">Introducing our latest collection of cutting-edge products, where innovation meets excellence. Explore our new arrivals, <br> meticulously crafted to elevate your experience and redefine the standards of quality in every aspect.</p>
+        </div>
+        
+        <!-- Product List -->
+          <div class="grid grid-cols-1 lg:grid-cols-2 grid-rows-1 lg:grid-rows-3 gap-6 m-6 lg:m-0">
+            <!-- product No. 1 -->
+            <div class="card flex flex-col lg:flex-row bg-base-100 border shadow">
+              <div class="flex flex-col lg:flex-row justify-center items-start">
+                <div class="w-full lg:w-2/5 ">
+                  <img class="w-full lg:w-40 h-60 lg:h-40  m-0 lg:m-5 p-5 lg:p-0" src="images/5.png" alt=""/>
+                </div>
+                <div class="card-body items-start w-full">
+                  <div class="flex justify-around gap-4">
+                    <div class="flex justify-between items-center gap-2">
+                      <i class="fas fa-star" style="color: gold;"></i>
+                      <p class="text-p_text_color">5.0</p>
+                    </div>
+                    <div class="flex justify-between items-center gap-2">
+                      <i class="fas fa-eye" style="color: gray;"></i>
+                      <p class="text-p_text_color">20</p>
+                    </div>
+                    <div class="flex justify-between items-center gap-2">
+                      <i class="fas fa-heart" style="color: gray;"></i>
+                      <p class="text-p_text_color">200</p>
+                    </div>
+                  </div>
+
+                  <div>
+                     <h4 class="text-xl font-extrabold">World Cup Flags Football</h4>
+                     <p class="text-p_text_color">Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+                  </div>
+
+                  <div class="flex flex-col lg:flex-row justify-around gap-3  lg:gap-7">
+                    <div class="flex justify-between items-center gap-2">
+                      <p class="text-lg font-extrabold text-primary_color">Price - $22.00</p>
+                    </div>
+                    <div class="flex justify-between items-center gap-2">
+                      <i class="fas fa-shopping-cart mr-2" style="color: gray;"></i>
+                      <p class="text-p_text_color">Delivery Fee : Free</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- product No. 2 -->
+            <div class="card flex flex-col lg:flex-row bg-base-100 border shadow">
+              <div class="flex flex-col lg:flex-row justify-center items-start">
+                <div class="w-full lg:w-2/5 ">
+                  <img class="w-full lg:w-40 h-60 lg:h-40  m-0 lg:m-5 p-5 lg:p-0" src="images/6.png" alt=""/>
+                </div>
+                <div class="card-body items-start w-full">
+                  <div class="flex justify-around gap-4">
+                    <div class="flex justify-between items-center gap-2">
+                      <i class="fas fa-star" style="color: gold;"></i>
+                      <p class="text-p_text_color">5.0</p>
+                    </div>
+                    <div class="flex justify-between items-center gap-2">
+                      <i class="fas fa-eye" style="color: gray;"></i>
+                      <p class="text-p_text_color">20</p>
+                    </div>
+                    <div class="flex justify-between items-center gap-2">
+                      <i class="fas fa-heart" style="color: gray;"></i>
+                      <p class="text-p_text_color">200</p>
+                    </div>
+                  </div>
+
+                  <div>
+                     <h4 class="text-xl font-extrabold">World Cup Flags Football</h4>
+                     <p class="text-p_text_color">Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+                  </div>
+
+                  <div class="flex flex-col lg:flex-row justify-around gap-3  lg:gap-7">
+                    <div class="flex justify-between items-center gap-2">
+                      <p class="text-lg font-extrabold text-primary_color">Price - $22.00</p>
+                    </div>
+                    <div class="flex justify-between items-center gap-2">
+                      <i class="fas fa-shopping-cart mr-2" style="color: gray;"></i>
+                      <p class="text-p_text_color">Delivery Fee : Free</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+             <!-- product No. 3 -->
+             <div class="card flex flex-col lg:flex-row bg-base-100 border shadow">
+              <div class="flex flex-col lg:flex-row justify-center items-start">
+                <div class="w-full lg:w-2/5 ">
+                  <img class="w-full lg:w-40 h-60 lg:h-40  m-0 lg:m-5 p-5 lg:p-0" src="images/7.png" alt=""/>
+                </div>
+                <div class="card-body items-start w-full">
+                  <div class="flex justify-around gap-4">
+                    <div class="flex justify-between items-center gap-2">
+                      <i class="fas fa-star" style="color: gold;"></i>
+                      <p class="text-p_text_color">5.0</p>
+                    </div>
+                    <div class="flex justify-between items-center gap-2">
+                      <i class="fas fa-eye" style="color: gray;"></i>
+                      <p class="text-p_text_color">20</p>
+                    </div>
+                    <div class="flex justify-between items-center gap-2">
+                      <i class="fas fa-heart" style="color: gray;"></i>
+                      <p class="text-p_text_color">200</p>
+                    </div>
+                  </div>
+
+                  <div>
+                     <h4 class="text-xl font-extrabold">World Cup Flags Football</h4>
+                     <p class="text-p_text_color">Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+                  </div>
+
+                  <div class="flex flex-col lg:flex-row justify-around gap-3  lg:gap-7">
+                    <div class="flex justify-between items-center gap-2">
+                      <p class="text-lg font-extrabold text-primary_color">Price - $22.00</p>
+                    </div>
+                    <div class="flex justify-between items-center gap-2">
+                      <i class="fas fa-shopping-cart mr-2" style="color: gray;"></i>
+                      <p class="text-p_text_color">Delivery Fee : Free</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- product No. 4 -->
+            <div class="card flex flex-col lg:flex-row bg-base-100 border shadow">
+              <div class="flex flex-col lg:flex-row justify-center items-start">
+                <div class="w-full lg:w-2/5 ">
+                  <img class="w-full lg:w-40 h-60 lg:h-40  m-0 lg:m-5 p-5 lg:p-0" src="images/8.png" alt=""/>
+                </div>
+                <div class="card-body items-start w-full">
+                  <div class="flex justify-around gap-4">
+                    <div class="flex justify-between items-center gap-2">
+                      <i class="fas fa-star" style="color: gold;"></i>
+                      <p class="text-p_text_color">5.0</p>
+                    </div>
+                    <div class="flex justify-between items-center gap-2">
+                      <i class="fas fa-eye" style="color: gray;"></i>
+                      <p class="text-p_text_color">20</p>
+                    </div>
+                    <div class="flex justify-between items-center gap-2">
+                      <i class="fas fa-heart" style="color: gray;"></i>
+                      <p class="text-p_text_color">200</p>
+                    </div>
+                  </div>
+
+                  <div>
+                     <h4 class="text-xl font-extrabold">World Cup Flags Football</h4>
+                     <p class="text-p_text_color">Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+                  </div>
+
+                  <div class="flex flex-col lg:flex-row justify-around gap-3  lg:gap-7">
+                    <div class="flex justify-between items-center gap-2">
+                      <p class="text-lg font-extrabold text-primary_color">Price - $22.00</p>
+                    </div>
+                    <div class="flex justify-between items-center gap-2">
+                      <i class="fas fa-shopping-cart mr-2" style="color: gray;"></i>
+                      <p class="text-p_text_color">Delivery Fee : Free</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- product No. 5 -->
+            <div class="card flex flex-col lg:flex-row bg-base-100 border shadow">
+              <div class="flex flex-col lg:flex-row justify-center items-start">
+                <div class="w-full lg:w-2/5 ">
+                  <img class="w-full lg:w-40 h-60 lg:h-40  m-0 lg:m-5 p-5 lg:p-0" src="images/9.png" alt=""/>
+                </div>
+                <div class="card-body items-start w-full">
+                  <div class="flex justify-around gap-4">
+                    <div class="flex justify-between items-center gap-2">
+                      <i class="fas fa-star" style="color: gold;"></i>
+                      <p class="text-p_text_color">5.0</p>
+                    </div>
+                    <div class="flex justify-between items-center gap-2">
+                      <i class="fas fa-eye" style="color: gray;"></i>
+                      <p class="text-p_text_color">20</p>
+                    </div>
+                    <div class="flex justify-between items-center gap-2">
+                      <i class="fas fa-heart" style="color: gray;"></i>
+                      <p class="text-p_text_color">200</p>
+                    </div>
+                  </div>
+
+                  <div>
+                     <h4 class="text-xl font-extrabold">World Cup Flags Football</h4>
+                     <p class="text-p_text_color">Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+                  </div>
+
+                  <div class="flex flex-col lg:flex-row justify-around gap-3  lg:gap-7">
+                    <div class="flex justify-between items-center gap-2">
+                      <p class="text-lg font-extrabold text-primary_color">Price - $22.00</p>
+                    </div>
+                    <div class="flex justify-between items-center gap-2">
+                      <i class="fas fa-shopping-cart mr-2" style="color: gray;"></i>
+                      <p class="text-p_text_color">Delivery Fee : Free</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- product No. 6 -->
+            <div class="card flex flex-col lg:flex-row bg-base-100 border shadow">
+              <div class="flex flex-col lg:flex-row justify-center items-start">
+                <div class="w-full lg:w-2/5 ">
+                  <img class="w-full lg:w-40 h-60 lg:h-40 m-0 lg:m-5 p-5 lg:p-0" src="images/10.png" alt=""/>
+                </div>
+                <div class="card-body items-start w-full">
+                  <div class="flex justify-around gap-4">
+                    <div class="flex justify-between items-center gap-2">
+                      <i class="fas fa-star" style="color: gold;"></i>
+                      <p class="text-p_text_color">5.0</p>
+                    </div>
+                    <div class="flex justify-between items-center gap-2">
+                      <i class="fas fa-eye" style="color: gray;"></i>
+                      <p class="text-p_text_color">20</p>
+                    </div>
+                    <div class="flex justify-between items-center gap-2">
+                      <i class="fas fa-heart" style="color: gray;"></i>
+                      <p class="text-p_text_color">200</p>
+                    </div>
+                  </div>
+
+                  <div>
+                     <h4 class="text-xl font-extrabold">World Cup Flags Football</h4>
+                     <p class="text-p_text_color">Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+                  </div>
+
+                  <div class="flex flex-col lg:flex-row justify-around gap-3  lg:gap-7">
+                    <div class="flex justify-between items-center gap-2">
+                      <p class="text-lg font-extrabold text-primary_color">Price - $22.00</p>
+                    </div>
+                    <div class="flex justify-between items-center gap-2">
+                      <i class="fas fa-shopping-cart mr-2" style="color: gray;"></i>
+                      <p class="text-p_text_color">Delivery Fee : Free</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </section>
+
+    <!-- Clients Question Section -->
+    <section>
+      <div class="flex flex-col">
+        <div class="mt-40 mb-12 border-y-2 border-dashed">
+          <h2 class="text-3xl lg:text-4xl font-extrabold text-black mt-6 mb-6 text-center">Clients Question</h2>
+          <p class="text-base text-p_text_color mb-6 text-center p-4"> At our core, we prioritize our clients' needs, providing tailored solutions and unwavering support. Your success is our mission, <br> and we are committed to fostering lasting partnerships built on trust, innovation, and exceptional service.</p>
+        </div>
+        <div class="flex flex-col lg:flex-row justify-between items-center lg:gap-10 border rounded-2xl lg:p-8         mb-40">
+          <div class="w-full lg:w-2/5">
+            <img class="w-full h-60 lg:h-full p-6 lg:p-0" src="images/11.png" alt="">
+          </div>
+          <div class="w-full lg:w-3/5 px-4 lg:px-0">
+            <div class="collapse collapse-plus border-b bg-base-600">
+              <input type="radio" name="my-accordion-3" checked="checked" /> 
+              <div class="collapse-title text-xl font-semibold py-6">
+                Prayer Facility
+              </div>
+              <div class="collapse-content"> 
+                <p class="text-p_text_color w-full">Discover top-tier hockey gear meticulously curated for peak performance, ensuring our players have the finest tools on the ice.</p>
+              </div>
+            </div>
+            <div class="collapse collapse-plus border-b bg-base-600">
+              <input type="radio" name="my-accordion-3" /> 
+              <div class="collapse-title text-xl font-semibold py-6">
+                Hockey Training
+              </div>
+              <div class="collapse-content"> 
+                <p class="text-p_text_color">Immerse yourself in our cutting-edge hockey training programs, designed to elevate skills, enhance endurance, and unleash the full potential of every player.</p>
+              </div>
+            </div>
+            <div class="collapse collapse-plus border-b bg-base-600">
+              <input type="radio" name="my-accordion-3" /> 
+              <div class="collapse-title text-xl font-semibold py-6">
+                Private Lessons
+              </div>
+              <div class="collapse-content"> 
+                <p class="text-p_text_color">Experience personalized coaching excellence with our private lessons, where skilled instructors tailor guidance to refine individual techniques and foster rapid skill advancement.</p>
+              </div>
+            </div>
+            <div class="collapse collapse-plus border-b bg-base-600">
+              <input type="radio" name="my-accordion-3" /> 
+              <div class="collapse-title text-xl font-semibold py-6">
+                Ski Touring
+              </div>
+              <div class="collapse-content"> 
+                <p class="text-p_text_color">Embark on exhilarating ski touring adventures, exploring pristine slopes and breathtaking landscapes with our expert-guided tours suitable for all skill levels.</p>
+              </div>
+            </div>
+            <div class="collapse collapse-plus border-b bg-base-600">
+              <input type="radio" name="my-accordion-3" /> 
+              <div class="collapse-title text-xl font-semibold py-6">
+                Booking
+              </div>
+              <div class="collapse-content"> 
+                <p class="text-p_text_color">Effortlessly plan your next hockey session, private lesson, or ski touring adventure through our user-friendly booking platform, ensuring convenience and flexibility.</p>
+              </div>
+            </div>
+            <div class="collapse collapse-plus border-b bg-base-600">
+              <input type="radio" name="my-accordion-3" /> 
+              <div class="collapse-title text-xl font-semibold py-6">
+                Pricing
+              </div>
+              <div class="collapse-content"> 
+                <p class="text-p_text_color">Transparent and competitive pricing reflects our commitment to accessibility, offering unparalleled value for top-notch equipment, training, and experiences in the world of hockey and skiing.</p>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+       
+      </div>
+    </section>
+
+     <!-- Get In Section -->
+     <section>
+      <div class="flex flex-col">
+        <div class="mb-12 border-y-2 border-dashed">
+          <h2 class="text-3xl lg:text-4xl font-extrabold text-black mt-6 mb-6 text-center">Get In Touch</h2>
+          <p class="text-base text-p_text_color mb-6 text-center p-4"> Get in touch with us for a seamless communication experience. Your inquiries are our priority, and we're here to provide prompt and personalized assistance. Whether it's questions, feedback, or collaboration opportunities, we eagerly await your message. Let's build connections and make your ideas a reality together.</p>
+        </div>
+        <div class="flex flex-col lg:flex-row justify-between gap-12">
+          <div>
+            <div class="card w-full bg-[#bced6d1a] shadow-2xl rounded-2xl">
+              <div class="card-body">
+                <img class="w-12 h-12 m-8" src="images/phone.png" alt="">
+                <div class="ml-8">
+                  <p class="text-p_text_color mb-3">Phone Number : </p>
+                  <h4 class="text-xl font-extrabold">(+62) 123-321-543</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <h1>Form</h1>
           </div>
         </div>
        
