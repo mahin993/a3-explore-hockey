@@ -36,6 +36,10 @@
   .font-manrope{
   font-family: "Manrope", sans-serif;
 }
+.hide{
+  display: none;
+}
+
 </style>
 </head>
 <body class="font-manrope">
@@ -108,19 +112,89 @@
     </div>
     <div class="p-8 bg-black h-40">
       <h3 class="text-3xl font-extrabold text-white mb-4">Meet all the heroes from the field</h3>
-      <p class="text-base text-p_text_color text-white">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+      <p class="text-base text-p_text_color text-white">Embark on an exhilarating journey as you meet the heroes of the hockey field, where skill, passion, and teamwork collide.</p>
     </div>
   </header>
 
   <!-- main section -->
-  <main class="font-manrope">
-    <!-- hockeys club section -->
-    <div>
-      <div class="mt-24">
-        <h1 class="text-4xl font-extrabold">Professional Hockeys Club</h1>
-        <p class="text-base text-p_text_color">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+  <main class="container mx-auto">
+
+    <!-- Hockeys Club Section -->
+    <section >
+      <div class="flex flex-col justify-center">
+        <div class="mt-24 mb-12 border-y-2 border-dashed">
+          <h2 class="text-4xl font-extrabold text-black mt-6 mb-6 text-center">Professional Hockeys Club</h2>
+          <p class="text-base text-p_text_color mb-6 text-center">Dive into the heart of professional hockey excellence with our premier hockey club. Experience the adrenaline-pumping action and unwavering <br> commitment of our elite players, united in their pursuit of victory on the ice.</p>
+        </div>
+        <div>
+          <div class="flex justify-between items-center px-9 gap-9">
+            <div class="flex flex-col items-center justify-center">
+              <div class="radial-progress text-black text-3xl font-extrabold h-28 w-28" style="--value:87;" role="progressbar">87%</div>
+              <h4 class="text-xl font-semibold my-4">Prayer Facility</h4>
+              <p class="text-p_text_color text-center">Elevate both body and spirit with our dedicated prayer facility, providing a tranquil space for players to find solace and focus before hitting the ice.</p>
+            </div>
+            <div class="flex flex-col items-center justify-center">
+              <div class="radial-progress text-black text-3xl font-extrabold h-28 w-28" style="--value:95;" role="progressbar">95%</div>
+              <h4 class="text-xl font-semibold my-4">Experienced Coach</h4>
+              <p class="text-p_text_color text-center">Guided by a seasoned coach, our team benefits from invaluable expertise, strategic insights, and personalized mentorship to enhance individual skills and team dynamics.</p>
+            </div>
+            <div class="flex flex-col items-center justify-center">
+              <div class="radial-progress text-black text-3xl font-extrabold h-28 w-28" style="--value:90;" role="progressbar">90%</div>
+              <h4 class="text-xl font-semibold my-4">Senior Player</h4>
+              <p class="text-p_text_color text-center">Learn from the best as seasoned senior players bring their wealth of experience, leadership, and championship mentality to inspire and mentor the next generation of hockey stars.</p>
+            </div>
+            <div class="flex flex-col items-center justify-center">
+              <div class="radial-progress text-black text-3xl font-extrabold h-28 w-28" style="--value:80;" role="progressbar">80%</div>
+              <h4 class="text-xl font-semibold my-4">Training Ground</h4>
+              <p class="text-p_text_color text-center">Our state-of-the-art training ground serves as the epicenter of skill development, fostering a competitive and supportive environment where players hone their talents and push their limits.</p>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
+
+    <!-- Program Sections -->
+    <section>
+      <div class="flex flex-col justify-center">
+        <div class="mt-24 mb-12 border-y-2 border-dashed">
+          <h2 class="text-4xl font-extrabold text-black mt-6 mb-6 text-center">Program Sections</h2>
+          <p class="text-base text-p_text_color mb-6 text-center"> Immerse yourself in the relentless pursuit of peak performance through our fitness regimen, sculpting champions ready for the fast-paced <br> demands of professional hockey.Join strategic sessions to refine tactical insights, fostering a winning edge led by experts in the game.</p>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-2 grid-rows-1 lg:grid-rows-2 lg:gap-x-5 lg:gap-y-9">
+          <div class="card w-full h-60 lg:h-96 image-full">
+            <figure><img class="w-full" src="images/2.png" alt="" /></figure>
+            <div class="card-body lg:mt-24 mb-10 mx-10">
+              <h2 class="card-title text-3xl font-extrabold ">Junior Program</h2>
+              <p class="my-4 font-semibold flex-grow-0">Nurturing the passion for hockey in our youngest enthusiasts, the Junior Program provides a foundation of skills, teamwork, and sportsmanship, cultivating the next generation of hockey stars.</p>
+              <div class="card-actions justify-start">
+                <button class="btn text-xl text-white font-extrabold border-0 rounded-lg bg-orange-700 hover:bg-amber-500 hover:text-black ">Register Now!</button>
+              </div>
+            </div>
+          </div>
+          <div class="card w-full h-60 lg:h-96 image-full">
+            <figure><img class="w-full" src="images/3.png" alt="" /></figure>
+            <div class="card-body lg:mt-24 mb-10 mx-10">
+              <h2 class="card-title text-3xl font-extrabold ">Teenager Program</h2>
+              <p class="my-4 font-semibold flex-grow-0">In the Teenager Program, aspiring players undergo a transformative journey, combining advanced skill development with character building, preparing them for the challenges and triumphs of competitive hockey.</p>
+              <div class="card-actions justify-start">
+                <button class="btn text-xl text-white font-extrabold border-0 rounded-lg bg-orange-700 hover:bg-amber-500 hover:text-black ">Register Now!</button>
+              </div>
+            </div>
+          </div>
+          <div class="card w-full h-60 lg:h-96 image-full lg:col-span-2">
+            <figure><img class="w-full" src="images/4.png" alt="" /></figure>
+            <div class="card-body lg:mt-52 mb-10 mx-10">
+              <h2 class="card-title text-3xl font-extrabold ">Professional Program</h2>
+              <p class="my-4 font-semibold flex-grow-0">Designed for elite athletes, our Professional Program offers a rigorous training regimen, <br> strategic mentorship, and a pathway to professional leagues, ensuring players reach their <br> full potential on the grand stage of professional hockey.</p>
+              <div class="card-actions justify-start">
+                <button class="btn text-xl text-white font-extrabold border-0 rounded-lg bg-orange-700 hover:bg-amber-500 hover:text-black ">Register Now!</button>
+              </div>
+            </div>
+          </div>
+        </div>
+       
+      </div>
+    </section>
 
   </main>
 
